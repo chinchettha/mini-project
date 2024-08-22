@@ -1,6 +1,0 @@
-[build]
-  command = "npm run build --prefix project-app"
-  publish = "project-app/build" # หรือ ".next" สำหรับ Next.js
-
-[functions]
-  directory = "netlify/functions" # ถ้าคุณมีการใช้งาน Netlify Functions
