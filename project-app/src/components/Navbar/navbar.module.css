@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #FF8343;
+    padding: 10px;
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    margin: 0 10px;
+}
+
+.navLink {
+    color: #F1DEC6;
+    text-decoration: none;
+    font-size: 20px; /* ปรับขนาดตัวหนังสือให้ใหญ่ขึ้น */
+    font-weight: bold; /* เพิ่มความหนาให้ตัวหนังสือ */
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}

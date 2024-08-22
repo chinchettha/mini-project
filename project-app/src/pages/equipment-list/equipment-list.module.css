@@ -1,0 +1,133 @@
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.title {
+    color: #179BAE;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 300px;
+}
+
+.searchIcon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.listItem:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+    flex: 1;
+    text-align: center;
+}
+
+.image {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.details {
+    flex: 3;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .listItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imageContainer {
+        margin-bottom: 15px;
+    }
+
+    .details {
+        font-size: 16px;
+    }
+
+    .icons {
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 15px;
+    }
+}
+
+.updated {
+    background-color: #e0ffe0; /* พื้นหลังสีเขียวอ่อนเพื่อไฮไลท์รายการที่ถูกอัปเดต */
+    border: 1px solid #00a000;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.successMessage {
+    color: green;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: blink-animation 1s steps(5, start) 5;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
